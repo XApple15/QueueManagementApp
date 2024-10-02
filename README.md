@@ -1,4 +1,5 @@
   Queue Management Application with a user-friendly interface that simulates the behavior of clients in multiple queues, utilizing MULTITHREADING for realistic and efficient queue management. Users will be able to input key parameters such as:
+  
 -the number of queues.
 
 -maximum simulation time.
