@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ug.queuesystem.GUI.SimulationManagerApp">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <TextField fx:id="timeLimitField" prefHeight="26.0" prefWidth="423.0" promptText="Time Limit" />
+    <TextField fx:id="maxProcessingTimeField" prefHeight="26.0" prefWidth="424.0" promptText="Max Processing Time" />
+    <TextField fx:id="minProcessingTimeField" prefHeight="26.0" prefWidth="470.0" promptText="Min Processing Time" />
+    <TextField fx:id="numberOfServersField" promptText="Number of Servers" />
+    <TextField fx:id="numberOfClientsField" promptText="Number of Clients" />
+    <TextField fx:id="minArrivalTimeField" promptText="Min Arrival Time" />
+    <TextField fx:id="maxArrivalTimeField" promptText="Max Arrival Time" />
+
+    <Button fx:id="runButton" alignment="CENTER" contentDisplay="CENTER" text="Run SimulationManager" />
+   <TextArea fx:id="time" prefHeight="10.0" prefWidth="50.0" text="Time 0" />
+
+    <TextArea fx:id="waitingClientsArea" editable="false" prefHeight="25.0" prefWidth="478.0" promptText="Waiting Clients" />
+    <TextArea fx:id="queueArea" editable="false" prefHeight="98.0" prefWidth="478.0" promptText="Queue" />
+    <TextArea fx:id="result" editable="false" prefHeight="64.0" prefWidth="478.0" promptText="Results" />
+</VBox>

@@ -1,0 +1,25 @@
+package ug.queuesystem;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import ug.queuesystem.GUI.SimulationManagerApp;
+
+import java.io.IOException;
+
+public class QueueSystem extends Application {
+    @Override
+    public void start(Stage stage) throws IOException {
+
+        FXMLLoader fxmlLoader = new FXMLLoader(SimulationManagerApp.class.getResource("/ug/queuesystem/hello-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Simulation Manager");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch();
+    }
+}
